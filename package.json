@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build --prefix client",
     "start": "node server/app.js",
-    "dev": "concurrently \"nodemon ./server/app.js\" \"cd client && npm run dev\""
+    "dev": "concurrently \"nodemon ./server/app.js\" \"cd client && npm run dev\"",
+    "dev-build": "npm install && npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [
     "MERN",
